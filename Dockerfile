@@ -1,6 +1,7 @@
 FROM python
 LABEL version=v1
 MAINTAINER Saloni
+RUN apt-get update
 RUN pip install cherrypy
 WORKDIR /var
 COPY index.html /var
